@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/boot.css">
+
+  </head>
+  
+
+<body>
+    <form class="needs-validation" action="/form" method="post" name="frm" onsubmit="return valid()" novalidate>
+        <h1 class="head">Score Card</h1>
+      
+        <div class="form-row" style="background-color:black;color:white">
+          <div class="col-md-12 mb-6">
+            <label for="validationCustom01">Student id</label>
+            <div class="input-group">
+              <input type="text" min="1" name="id" class="form-control" id="validationCustomUsername" placeholder="id" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Please enter id.
+              </div>
+            </div> 
+          </div>
+          <br><br>
+
+          <div class="col-md-12 mb-3">
+            <br>
+            <label for="validationCustom02">Student name</label>
+            <div class="input-group">
+              <input type="text" name="fname" class="form-control" id="validationCustomUsername" placeholder="name" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Please enter name.
+              </div>
+            </div>
+          </div>
+          <br><br>
+
+          <div class="col-md-12 mb-3">
+            <label for="validationCustomUsername">Address</label>
+            <div class="input-group">
+              <input type="text" name="add" class="form-control" id="validationCustomUsername" placeholder="address" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Please enter address
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom03">English</label>
+            <input type="number" name="eng"  class="form-control" id="validationCustom03" placeholder="enter marks in english" required>
+            <div class="invalid-feedback">
+              Please enter marks.
+            </div>
+          </div>
+
+      
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom03">Hindi</label>
+              <input type="number" name="hindi" class="form-control" id="validationCustom03" placeholder="enter marks in hindi" required>
+              <div class="invalid-feedback">
+                Please enter marks.
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom03">Punjabi</label>
+              <input type="number" name="pun" class="form-control" id="validationCustom03" placeholder="enter marks in punjabi" required>
+              <div class="invalid-feedback">
+                Please enter marks.
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom03">Maths</label>
+              <input type="number" name="maths" class="form-control" id="validationCustom03" placeholder="enter marks in maths" required>
+              <div class="invalid-feedback">
+                Please enter marks.
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom03">Physics</label>
+              <input type="number" name="phy" class="form-control" id="validationCustom03" placeholder="enter marks in physics" required>
+              <div class="invalid-feedback">
+                Please enter marks.
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom03">Chemistry</label>
+              <input type="number" name="che" class="form-control" id="validationCustom03" placeholder="enter marks in chemistry" required>
+              <div class="invalid-feedback">
+                Please enter marks.
+              </div>
+            </div>
+
+           
+
+        <div class="text-center">
+        <button class="btn btn-primary" type="submit" >Submit</button>
+      </div>
+      </form>
+      
+      <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+</body>
+</html>

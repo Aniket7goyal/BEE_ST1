@@ -1,0 +1,21 @@
+.head{
+    text-align: center;
+}
+.text-center{
+    align-items: center;
+    padding-left: 350px;
+
+}
+.btn btn-primary{
+    align-items: center;
+    padding:20;
+}
+
+.form-row{
+    width:800px;
+    height:650px;
+    align-items: center;
+    margin-left:400px;
+   
+    position: absolute;
+}
